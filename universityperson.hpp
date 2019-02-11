@@ -5,9 +5,12 @@ class UniversityPerson {
 private:
   std::string name;
   int id;
+protected:
+  std::string email;
 public:
   UniversityPerson();
   UniversityPerson(std::string name, int id);
+  ~UniversityPerson();
   std::string get_name();
   int get_id();
 };

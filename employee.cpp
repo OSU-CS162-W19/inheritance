@@ -3,7 +3,10 @@
 #include "employee.hpp"
 
 Employee::Employee(std::string name, int id, std::string title, float pay_rate) :
-  UniversityPerson(name, id), title(title), pay_rate(pay_rate) {}
+    UniversityPerson(name, id), title(title), pay_rate(pay_rate) {
+
+  this->email = "someemail@oregonstate.edu";
+}
 
 std::string Employee::get_title(){
   return this->title;
