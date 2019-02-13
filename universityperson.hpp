@@ -13,7 +13,11 @@ public:
   ~UniversityPerson();
   std::string get_name();
   int get_id();
+
+  friend bool operator==(const UniversityPerson& up1, const UniversityPerson& up2);
 };
+
+bool operator==(const UniversityPerson& up1, const UniversityPerson& up2);
 
 
 #endif

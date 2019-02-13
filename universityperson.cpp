@@ -1,6 +1,10 @@
 #include <iostream>
 #include "universityperson.hpp"
 
+bool operator==(const UniversityPerson& up1, const UniversityPerson& up2) {
+  return up1.id == up2.id;
+}
+
 UniversityPerson::UniversityPerson() : name("unnamed"), id(-1) {}
 
 UniversityPerson::UniversityPerson(std::string name, int id)

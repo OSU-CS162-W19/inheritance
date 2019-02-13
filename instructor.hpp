@@ -9,6 +9,8 @@ private:
 public:
   Instructor(std::string name, int id, std::string title, float salary, int appt_length);
   float get_monthly_pay(float hours_worked);
+  float get_monthly_pay();
+  std::string get_title();
 };
 
 #endif

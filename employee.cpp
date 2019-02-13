@@ -2,6 +2,10 @@
 
 #include "employee.hpp"
 
+void give_raise(Employee& employee, float percent_raise) {
+  employee.pay_rate *= (1.0 + percent_raise);
+}
+
 Employee::Employee(std::string name, int id, std::string title, float pay_rate) :
     UniversityPerson(name, id), title(title), pay_rate(pay_rate) {
 
